@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.allw{
+    background: linear-gradient(to bottom,#fddfee 20%, #a1d7f5);
+    background-repeat: no-repeat;
+}
+
+/* Elemen pembungkus untuk animasi jatuh */
+.sakura-wrapper {
+  position: absolute;
+  top: -50px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+/* Gambar bunga sakura & animasi mengayun */
+.sakura {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/4474/4474963.png');
+  background-size: cover;
+  opacity: 1;
+  animation-name: sway;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* Animasi jatuh */
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  85% {
+    transform: translateY(1500px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(1800px);
+    opacity: 0;
+  }
+}
+
+/* Animasi mengayun */
+@keyframes sway {
+  0% {
+    transform: translateX(31px) rotate(80deg);
+  }
+  50% {
+    transform: translateX(-80px) rotate(-80deg);
+  }
+  100% {
+    transform: translateX(31px) rotate(80deg); 
+  }
+}
+
+/* Variasi posisi dan durasi */
+.s1 { left: 10%; animation-duration: 10s; animation-delay: 0s; }
+.s2 { left: 20%; animation-duration: 12s; animation-delay: 2s; }
+.s3 { left: 30%; animation-duration: 9s; animation-delay: 1s; }
+.s4 { left: 40%; animation-duration: 11s; animation-delay: 3s; }
+.s5 { left: 50%; animation-duration: 10.5s; animation-delay: 0.5s; }
+.s6 { left: 60%; animation-duration: 13s; animation-delay: 1.5s; }
+.s7 { left: 70%; animation-duration: 9.5s; animation-delay: 2.5s; }
+.s8 { left: 80%; animation-duration: 12s; animation-delay: 1s; }
+.s9 { left: 90%; animation-duration: 11s; animation-delay: 0s; }
+
+.s1 .sakura { animation-duration: 4s; }
+.s2 .sakura { animation-duration: 3.5s; }
+.s3 .sakura { animation-duration: 5s; }
+.s4 .sakura { animation-duration: 4.5s; }
+.s5 .sakura { animation-duration: 6s; }
+.s6 .sakura { animation-duration: 3.2s; }
+.s7 .sakura { animation-duration: 4.8s; }
+.s8 .sakura { animation-duration: 3.7s; }
+.s9 .sakura { animation-duration: 5.5s; }
+
+/* sec1 */
+
+#content{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+}
+
+#wrappernav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 89vh;
+}
+
+.navbar{
+    border-right: 1px solid black;
+    height: 100vh;
+}
+
+#logos{
+    width: 170px;
+    height: 170px;
+    margin: 20px;
+}
+
+.navbar ul{
+    list-style: none; 
+    margin-bottom: 200px;
+}
+
+.navbar li{
+    writing-mode: vertical-lr;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+div a:hover {
+    color: #538cff;
+}
+
+#pink1{
+    position: relative;
+    left: 285px;
+    top: 20px;
+    background-color: #fab6c0;
+    width: 1025px;
+    height: 949px;
+}
+
+#G1{
+    position: absolute;
+    left: -150px;
+    top: 30px;
+}
+
+
+#G2{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#G3{
+    position: absolute;
+    right: 0;
+    bottom: -247px;
+}
+
+.sec1 #t1, #t2, #t3{
+    position: absolute;
+}
+
+#t3{
+    bottom: -280px;
+    left: -38.4px;
+}
+
+#t2{
+    bottom: -195px;
+    left: 105px;
+}
+
+#t1{
+    bottom: -105px;
+    left: 240px;
+}
+
+/* Sec2 */
+
+#hn1{
+    display: flex;
+    margin: 350px auto 15px;
+}
+
+.bckn{
+    width: 1025px;
+    height: 630px;
+    background-color: #f7f4ef;
+    position: relative;
+    top: 0;
+}
+
+#nt1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 7px;
+    font-size: 48px;
+    text-decoration: none;
+    background-color: #f7f4ef;
+    height: 206px;
+    width: 700px;
+    padding-left: 10px;
+    color: black;
+    border-top: 2px solid black;
+}
+
+#nt2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 212px;
+    font-size: 48px;
+    text-decoration: none;
+    background-color: #f7f4ef;
+    height: 206px;
+    width: 700px;
+    padding-left: 10px;
+    color: black;
+    border-top: 2px solid black;
+}
+
+#nt3{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 418px;
+    font-size: 48px;
+    text-decoration: none;
+    background-color: #f7f4ef;
+    height: 206px;
+    width: 700px;
+    padding-left: 10px;
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#buttont3{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    right: -95px;
+    top: 280px;
+    font-size: 40px;
+    background-color: #538cff;
+    width: 314px;
+    height: 99px;
+    text-align: center;
+}
+
+#buttont3:hover{
+    color: white;
+}
+
+#nt1:hover{
+    color: #538cff;
+}
+
+#nt2:hover{
+    color: #538cff;
+}
+
+#nt3:hover{
+    color: #538cff;
+}
+
+/* sec3 */
+
+#hm1{
+    display: flex;
+    margin: 180px auto 0;
+}
+
+#buttonm1{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    background-color: #538cff;
+    width: 656px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+}
+
+#buttonm2{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    background-color: #538cff;
+    width: 656px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+}
+
+#buttonm a:hover{
+    color: white;
+}
+
+.sec3 p{
+    text-align: center;
+    margin: 50px auto 0;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#x, #yt, #ig, #linee{
+    position: relative;
+    width: 71px;
+    height: 71px;
+    left: 460px;
+    margin: 50px 10px 10px;
+}
+
+#yt{
+    width: 85px;
+    height: 85px;
+    margin-top: 0;
+    top: 7px;
+}
+
+/* Sec4 */
+
+
+#footer{
+    position: relative;
+    background-color: #ccdbf2;
+    height: 283px;
+    top: 50px;
+}
+
+#bk1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#bk2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#logof{
+    position: absolute;
+    margin: 110px;
+    margin-left: 430px;
+}
+
+#footer p{
+    position: absolute;
+    margin: 90px;
+    margin-left: 670px;
+    font-size: 20px;
+}
