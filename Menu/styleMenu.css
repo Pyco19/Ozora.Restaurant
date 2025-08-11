@@ -103,7 +103,7 @@
 
 .navbar{
     border-right: 1px solid black;
-    height: 100vh;
+    height: 120vh;
 }
 
 #logos{
@@ -380,3 +380,4 @@ div a:hover {
     margin-left: 670px;
     font-size: 20px;
 }
+
