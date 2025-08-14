@@ -98,7 +98,7 @@
     top: 0;
     left: 0;
     width: 210px;
-    height: 45vh;
+    height: 100vh;
 }
 
 .navbar{
@@ -153,12 +153,10 @@ div a:hover {
 
 .secc1{
     position: relative;
-    max-width: 1311px;
+    width: 100%;
 }
 
 #ps1{
-    position: absolute;
-    margin-left: 535px;
     padding-top: 15px;
     font-size: 80px;
     font-family: "Zen Old Mincho", serif;
@@ -167,6 +165,7 @@ div a:hover {
     transform: scale(0);
     opacity: 0;
     animation: popIn 0.6s ease forwards;
+    text-align: center;
 }
 
 #ps1:nth-child(1) {animation-delay: 0.3s;}
@@ -184,7 +183,7 @@ div a:hover {
 
 #bkt1{
     position: absolute;
-    right: -330px;
+    right: 0;
     top: 10px;
 }
 
@@ -213,8 +212,8 @@ div a:hover {
 
 .secc1 ul{
     display: flex;
-    gap: 100px;
     list-style: none;
+    justify-content: space-between;
 }
 
 .dish ul:nth-child(1){ animation-delay: 0.1s; }
@@ -257,19 +256,17 @@ div a:hover {
   font-family: "Zen Old Mincho", serif;
 }
 
-#bckjm1{
+.bckjm1{
   position: relative;
-  left: 169px;
-  top: 310px;
   width: 152px;
   height: 24px;
   background-color: #f7849f;
+  margin: 0 0 1rem;
 }
 
-#bckm1, #bckm2, #bckm3, #bckm4{
+
+.bckm1, .bckm2, .bckm3, .bckm4{
   position: relative;
-  left: 169px;
-  top: 330px;
   width: 260px;
   height: 260px;
   background-color: #fff7f0;
@@ -277,7 +274,7 @@ div a:hover {
   box-shadow: 10px 10px #f7849f;
 }
 
-#bckm1, #bckm2, #bckm3, #bckm4 p{
+.bckm1, .bckm2, .bckm3, .bckm4 p{
   padding-top: 185px;
   padding-left: 20px;
   font-size: 17px;
@@ -294,59 +291,60 @@ div a:hover {
   padding-right: 20px;
 }
 
-#bckm1 img{
+.bckm1 img{
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px 40px 85px;
 }
 
-#bckm2 img{
+.bckm2 img{
   position: absolute;
   top: 0;
   left: 0;
   padding: 30px 25px 120px;
 }
 
-#bckm3 img{
+.bckm3 img{
   position: absolute;
   top: 0;
   left: 0;
   padding: 20px 30px 110px;
 }
 
-#bckm4 img{
+.bckm4 img{
   position: absolute;
   top: 0;
   padding: 30px 100px 90px;
 }
 
-#bckm1 img:hover {
+.bckm1 img:hover {
     transform: scale(1.40);
     transition: 0.2s;
 }
 
-#bckm2 img:hover {
+.bckm2 img:hover {
     transform: scale(1.40);
     transition: 0.2s;
 }
 
-#bckm3 img:hover {
+.bckm3 img:hover {
     transform: scale(1.40);
     transition: 0.2s;
 }
 
-#bckm4 img:hover {
+.bckm4 img:hover {
     transform: scale(1.40);
     transition: 0.2s;
 }
 
 .dish, .steak, .side, .desert{
-  margin-bottom: 100px;
+  max-width: 980px;
+  margin: 0 auto 100px;
 }
 
-.sec4{
-  margin-top: 450px;
+.dish {
+  margin-top: 200px;
 }
 
 #footer{
